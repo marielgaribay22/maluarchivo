@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family:"Gin and Soda Personal Use", "Grandiflora One Regular", "BD Megalona DEMO Personal Use Only Regular Italic", "Arastin Pro  FREE DEMO Regular";
+  margin: 0;
+  padding: 0;
+  background-color: #fdf2ee;
+}
+.container {
+  position: relative;
+}
+.banner {
+  background-color: #6c5a2a;
+  color: #fdf2ee;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.banner-text span {
+  white-space: nowrap;
+  margin-right: 70px; /* Adjust spacing between text elements */
+}
+
+.banner-text {
+  animation: slideText 30s infinite linear; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-text span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.centered-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.menu-container {
+  text-align: center;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 50px;
+  border: 2px solid #6c5a2a; 
+  border-radius: 20px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #6c5a2a;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  display: block; 
+  text-align: center;
+}
+
+.menu ul li a:hover {
+  background-color: #ddd;
+}
+
+.menu ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+.menu ul li a:focus {
+  outline: none;
+}
+
+.menu ul li a:focus::after {
+  width: 100%;
+}
+
+.menu ul li a:active {
+  transform: translateY(2px);
+}

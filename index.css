@@ -38,10 +38,23 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
-.centered-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%; 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
 }
 .menu-container {
   text-align: center;

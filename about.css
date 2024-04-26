@@ -7,6 +7,10 @@ body {
   padding: 0;
   background-color: #fdf2ee;
 }
+
+
+
+
 .container {
   position: relative;
 }
@@ -18,11 +22,11 @@ body {
 }
 .banner-text span {
   white-space: nowrap;
-  margin-right: 70px; /* Adjust spacing between text elements */
+  margin-right: 70px; 
 }
 
 .banner-text {
-  animation: slideText 30s infinite linear; /* Adjust the duration and timing function as needed */
+  animation: slideText 30s infinite linear; 
 }
 
 @keyframes slideText {
@@ -39,6 +43,9 @@ body {
   white-space: nowrap;
 }
 
+
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -50,6 +57,10 @@ body {
   max-width: 100%;
   max-height: 100%; 
 }
+
+
+
+
 .container {
   display: flex;
   justify-content: center;

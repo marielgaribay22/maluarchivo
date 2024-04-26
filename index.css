@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-  font-family:"Gin and Soda Personal Use", "Grandiflora One Regular", "BD Megalona DEMO Personal Use Only Regular Italic", "Arastin Pro  FREE DEMO Regular";
+  font-family:"Gin and Soda Personal Use", "Grandiflora One Regular", "BD Megalona DEMO Personal Use Only Regular Italic";
   margin: 0;
   padding: 0;
   background-color: #fdf2ee;
@@ -18,11 +18,11 @@ body {
 }
 .banner-text span {
   white-space: nowrap;
-  margin-right: 70px; /* Adjust spacing between text elements */
+  margin-right: 70px; 
 }
 
 .banner-text {
-  animation: slideText 30s infinite linear; /* Adjust the duration and timing function as needed */
+  animation: slideText 60s infinite linear; 
 }
 
 @keyframes slideText {
@@ -37,6 +37,16 @@ body {
 .banner-text span {
   display: inline-block;
   white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 5px 0; 
+  }
+
+  .banner-text span {
+    margin-right: 20px; 
+    font-size: 14px;
+  }
 }
 
 
@@ -129,49 +139,161 @@ body {
 }
 
 
-.container {
+
+
+
+.section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .left, .right {
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left img, .right img {
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+.right {
+  justify-content: flex-end; 
 }
 
 .center {
   flex: 2;
   text-align: center;
+ 
 }
 
 .image {
   width: 100%;
-  max-width: 30px;
-  border-radius: 10%;
-  position: relative;
-  z-index: 1;
-}
-
-.small-image {
-  width: 70%;
-  max-width: 30px;
-  border-radius: 10%;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
+  max-width: 200px; 
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  align-content: flex-start;
+  
 }
 
 .text {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #6c5a2a;
+  font-size: 2.0rem; 
+  margin-bottom: 70px;
+  color: #6C5A2A;
 }
 
 .button {
   padding: 10px 20px;
-  background-color: #461805;
+  background-color: #6c5a2a;
   color: #fdf2ee;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; 
+}
+
+
+
+
+.slideshow-container {
+  background-color: #EDD7D6; 
+  width: 100%; 
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease; 
+  overflow: hidden;
+}
+
+.slideshow img {
+  max-width: 100%;
+  max-height: 60%; 
+  object-fit: contain; 
+  padding: 40px 40px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+
+.slideshow {
+  animation: slide 50s linear infinite;
+}
+
+.slideshow img {
+  width: 230px; 	
+  height: auto; 
+  margin: 0 10px;
+}
+
+
+
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact {
+  flex: 2;
+  text-align: center;
+}
+.text {
+  font-size: 1.6rem; 
+  margin-bottom: 20px;
+  color: center;
+}
+.button {
+  padding: 5px 10px;
+  background-color: #6c5a2a;
+  color: #fdf2ee;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; 
+}
+
+
+
+
+
+
+footer {
+    background-color: #6c5a2a;
+    padding: 20px;
+    text-align: center;
+	color: #FDF2EE;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }

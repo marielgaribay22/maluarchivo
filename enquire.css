@@ -12,6 +12,8 @@ body {
 
 
 
+
+
 .container {
   position: relative;
 }
@@ -141,4 +143,117 @@ body {
 
 .menu ul li a:active {
   transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+.container container1 {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  width: 80%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+h2 {
+  text-align: center;
+  color: #6C5A2A;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #6C5A2A;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+	
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6C5A2A;
+  color: #fdf2ee;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+label[for="contact"] {
+    color: #6C5A2A;
+}
+
+label[for="deposit"] {
+    color: #6C5A2A;
+	font-family: 'GrandifloraOne Regular';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #6c5a2a;
+    padding: 20px;
+    text-align: center;
+	color: #FDF2EE;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }

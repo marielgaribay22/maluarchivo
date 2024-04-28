@@ -11,6 +11,7 @@ body {
 
 
 
+
 .container {
   position: relative;
 }
@@ -140,4 +141,39 @@ body {
 
 .menu ul li a:active {
   transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #6c5a2a;
+    padding: 20px;
+    text-align: center;
+	color: #FDF2EE;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
